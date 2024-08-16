@@ -1,7 +1,6 @@
 package com.qa.utils;
 
 import io.appium.java_client.android.options.UiAutomator2Options;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
 import java.util.Properties;
@@ -16,7 +15,8 @@ public class CapabilitiesManager {
     File iosApp = new File(f, "iosAppName");
 
 
-    public DesiredCapabilities getCaps() {
+    // Below method depriciated
+    /*public DesiredCapabilities getCaps() {
         GlobalParameters parameters = new GlobalParameters();
         Properties props = new Properties();
 
@@ -61,7 +61,7 @@ public class CapabilitiesManager {
             utils.log().info("Failed to load capabilities. ABORT!!");
             throw e;
         }
-    }
+    }*/
 
 
     public UiAutomator2Options getOptions() {

@@ -31,7 +31,7 @@ public class DriverManager {
                         driver = new AndroidDriver(new ServerManager().getServer().getUrl(), new CapabilitiesManager().getOptions());
                         break;
                     case "iOS":
-                        driver = new IOSDriver(new ServerManager().getServer().getUrl(), new CapabilitiesManager().getCaps());
+                        driver = new IOSDriver(new ServerManager().getServer().getUrl(), new CapabilitiesManager().getOptions());
                         break;
 
                 }
